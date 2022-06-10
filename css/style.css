@@ -19,6 +19,7 @@
 .grilla {
   width: 100%;
   display: flex;
+  margin: auto;
   justify-content: center;
   align-items: center;
 }
@@ -47,3 +48,4 @@
   justify-content: center;
   align-items: center;
 }
+

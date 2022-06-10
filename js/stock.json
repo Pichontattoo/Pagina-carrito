@@ -41,7 +41,7 @@
   {
     "id": 5,
     "family": "accesorios",
-    "name": "cable fender",
+    "name": "Cable Fender",
     "category": "accesorios",
     "image": "../assets/images/cable-1.jpg",
     "price": 3800,
@@ -50,7 +50,7 @@
   {
     "id": 6,
     "family": "accesorios",
-    "name": "puas",
+    "name": "Puas",
     "category": "accesorios",
     "image": "../assets/images/puas.jpg",
     "price": 1200,
