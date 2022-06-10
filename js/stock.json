@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "family": "pedales",
+    "name": "Super Overdrive",
+    "category": "overdrive",
+    "image": "../assets/images/sd-1.jpg",
+    "price": 14990,
+    "description": "Pedal de overdirve sutil sarasa sarasa"
+  },
+
+  {
+    "id": 2,
+    "family": "pedales",
+    "name": "Distorsion",
+    "category": "overdrive",
+    "image": "../assets/images/ds-1.jpg",
+    "price": 13990,
+    "description": "Pedal de overdirve, pedal de distorsion"
+  },
+
+  {
+    "id": 3,
+    "family": "pedales",
+    "name": "Super OD-2",
+    "category": "overdrive",
+    "image": "../assets/images/sd-1-black.jpg",
+    "price": 14390,
+    "description": "overdirve violento"
+  },
+
+  {
+    "id": 4,
+    "family": "pedaleras",
+    "name": "boss gt-100",
+    "category": "multiefectos",
+    "image": "../assets/images/gt-1000.jpg",
+    "price": 38000,
+    "description": "Pedal de overdirve sutil sarasa sarasa"
+  },
+  {
+    "id": 5,
+    "family": "accesorios",
+    "name": "cable fender",
+    "category": "accesorios",
+    "image": "../assets/images/cable-1.jpg",
+    "price": 3800,
+    "description": "cable reforzado"
+  },
+  {
+    "id": 6,
+    "family": "accesorios",
+    "name": "puas",
+    "category": "accesorios",
+    "image": "../assets/images/puas.jpg",
+    "price": 1200,
+    "description": "Puas surtidas"
+  }
+]
