@@ -1,7 +1,10 @@
 const stock = "./js/stock.json"  // URL del API
 const container = document.getElementById('container')
-const template = document.getElementById('template').content
+const template = document.getElementById('template').content   // template de los productos del catalogo
 const fragment = document.createDocumentFragment()
+
+
+
 
 
 // limpiar el catalogo en cada busqueda
@@ -10,6 +13,8 @@ function limpiarCatalogo() {
     container.removeChild(container.firstChild)
   }
 }
+
+// cargar las ofertas al cargar la pagina 
 
 window.onload = async function ofertas() {
   let data = []
@@ -23,6 +28,8 @@ window.onload = async function ofertas() {
 
 }
 
+
+// filtrar con el select para elegir productos por categorias
 async function filtro() {
   limpiarCatalogo()
   const product = document.getElementById('select')
@@ -36,6 +43,7 @@ async function filtro() {
 
     const filterArray = selector.filter(item => item.family === filter)
     pintarCards(filterArray)
+    dataCarro = filterArray
   }
 }
 
@@ -46,7 +54,7 @@ const form = document.getElementById('form')
 
 
 
-
+// buscar productos con el formulario
 
 form.addEventListener('submit', async (event) => {
   event.preventDefault()
@@ -63,7 +71,7 @@ form.addEventListener('submit', async (event) => {
 
   const newArray = data.flatMap(item => [{ name: item.name.toLowerCase(), image: item.image, price: item.price, description: item.description }])
   const filterArray = newArray.filter(item => item.description.toLowerCase().includes(input))  // busca en la descripcion para renderizar el elemento
-
+  datos = filterArray
 
   pintarCards(filterArray)
 
@@ -84,3 +92,27 @@ const pintarCards = data => {
   })
   container.appendChild(fragment)
 }
+
+// agregar productos al carrito
+
+
+const btn = document.querySelectorAll('.bttn-carro')
+
+const carro = []
+
+
+function addCarro () {
+  const nameProduct = template.querySelector('h4').textContent
+  const imageProduct = template.querySelector('img').src
+  const priceProduct = template.querySelector('p').textContent
+
+  carro.push({"name": nameProduct, "image": imageProduct, "price": priceProduct })
+
+  localStorage.setItem('BaseDeDatos', JSON.stringify(carro.flatMap(item => ({ name: item.name, image: item.image, price: item.price }))))
+  
+}
+
+//crear lista del carrito
+
+
+
