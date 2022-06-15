@@ -11,6 +11,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sarpanch:wght@400;500;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <title>Pagina Con Carrito</title>
 </head>
@@ -33,9 +36,10 @@
               <a class="nav-link" href="#">Link</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><span class="material-symbols-outlined">
+              
+              <a id="carro-cantidad" class="nav-link" href="./pages/carro.html"><span class="material-symbols-outlined">
                 shopping_cart
-                </span></a>
+                </span><div id="totalItems"></div></a>
             </li>
             <li class="nav-item"><div id="username"></div></li>
             
@@ -48,21 +52,24 @@
       </div>
     </nav>
   </header>
-  <div class="publicity">
+  <!-- <div class="publicity">
     
-  </div> 
+  </div> -->
   <div class="container">
+    <div class="filter-bar">
+      <label for="select">Filtrar por: </label>
+      <select id="select" class="formselect" onchange={filtro()}>
+        <option value="" disabled selected hidden>Categoria</option>
+        <option value="pedales">Pedales</option>
+        <option value="pedaleras">Pedaleras</option>
+        <option value="accesorios">Accesorios</option>
+      </select>
+    </div>
+    
     <div class="row gx-2 ">
 
-      <div class="col-md-2">
-        <select id="select" class="form-select" onchange={filtro()}>
-          <option selected>Catalogo</option>
-          <option value="pedales">Pedales</option>
-          <option value="pedaleras">Pedaleras</option>
-          <option value="accesorios">Accesorios</option>
-        </select>
-      </div>
-      <div class="col-md-10">
+      <div id="titulo-ofertas"></div>
+      <div class="col-md-12">
         <div id="container" class="grilla container-md"></div>
       </div>
   
@@ -76,11 +83,11 @@
     <div class="cards row">
       <div class="card" style="width: 14rem;">
         <img src="" class ="card-img-top" alt="...">
-        <div class="card-body">
+        <div id="data-chart" class="card-body">
           <h4 class="card-title"></h4>
           <h5 class="card-title"></h5>
           <p class="card-text"></p>
-          <button class="btn btn-primary bttn-carro" onclick={addCarro()}>Agregar al carrito</button>
+          <button class="btn btn-primary bttn-carro" name="btn-carro" onclick={addCarro()}>Agregar al carrito</button>
         </div>
       </div>
     </div>

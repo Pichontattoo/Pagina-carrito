@@ -31,6 +31,16 @@
 
   {
     "id": 4,
+    "family": "pedales",
+    "name": "Super OD-2",
+    "category": "overdrive",
+    "image": "../assets/images/sd-1-black.jpg",
+    "price": 14390,
+    "description": "overdirve violento"
+  },
+
+  {
+    "id": 5,
     "family": "pedaleras",
     "name": "boss gt-100",
     "category": "multiefectos",
@@ -39,7 +49,7 @@
     "description": "Pedal de overdirve sutil sarasa sarasa"
   },
   {
-    "id": 5,
+    "id": 6,
     "family": "accesorios",
     "name": "Cable Fender",
     "category": "accesorios",
@@ -48,7 +58,7 @@
     "description": "cable reforzado"
   },
   {
-    "id": 6,
+    "id": 7,
     "family": "accesorios",
     "name": "Puas",
     "category": "accesorios",

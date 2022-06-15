@@ -6,17 +6,29 @@
 
 .navbar {
   padding: 0%;
+  
 }
 .navigation {
   padding: 2%;
   background-color: #2a6985;
+  display: flex;
+  align-items: center;
 }
 
 .nav-link {
   color: antiquewhite;
+  position: relative;
 }
 
+#totalItems {
+  font-size: 1rem;
+  position: absolute;
+  top: 0;
+  color: rgb(255, 255, 255);
+  background-color: rgb(177, 3, 3);
+}
 .container {
+  width: 80%;
   padding: 3%;
 }
 
@@ -40,6 +52,32 @@
   padding: 1%;
 }
 
+.carritoSpan{
+  background-color: red;
+  position: relative;
+}
+
+.filter-bar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+label {
+  font-weight: 900;
+  margin: 1%;
+}
+.formselect {
+  width: 15%;
+  display: inline;
+  border: none;
+}
+
+.formselect:active{
+  border: none;
+}
+
 .btn {
   background-color: rgb(60, 167, 167);
   border: none;
@@ -53,3 +91,56 @@
   justify-content: center;
   align-items: center;
 }
+
+.h3-ofertas {
+  margin: 1.5%;
+  color: rgb(117, 9, 9);
+  font-family: 'Bebas Neue';
+  font-size: 3rem;
+  letter-spacing: 0.25em;
+  word-spacing: 0.25em;
+  text-transform: uppercase;
+  text-align: center;
+  animation: bounce-top 1.5s  both;
+
+}
+
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
