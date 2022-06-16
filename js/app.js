@@ -151,20 +151,12 @@ const cargarCarro = item => {
   const carrito = {
       name: item.querySelector('h4').textContent,
       price: item.querySelector('p').textContent,
-      id: item.querySelector('button').dataset.id,
+      img:item.querySelector('img')
 
   }
   carro.push(carrito)
   console.log(carro)
   countCarro()
   totalPrice()
-  
-  localStorage.setItem('BaseDeDatos', JSON.stringify(carro.flatMap(item => ({ name: item.name, image: item.image, price: item.price }))))
+  localStorage.setItem('baseDeDatos', JSON.stringify(carro))
  }
-
-
- 
-
-
-
-//crear lista del carrito */
