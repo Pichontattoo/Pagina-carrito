@@ -7,7 +7,7 @@ const fragmento = document.createDocumentFragment()
 const valorTotal = document.getElementById('totalCompra')
 
 window.addEventListener('load', () => {  
-    const carrito = data.filter(item => [{ name: item.name, image: item.image, price: item.price}])
+    const carrito = data.filter(item => [{ id: item.id, name: item.name, image: item.image, price: item.price}])
         console.log(carrito)
         imprimirCarro(carrito)
     })
@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
 
 const imprimirCarro = data => {
     data.map(product => {
-  
+      
       templateCarro.querySelector('h4').textContent = product.name
       templateCarro.querySelector('p').textContent = product.price
       const clonar = templateCarro.cloneNode(true);
@@ -40,3 +40,15 @@ const totalCompraCarro = () => {
 
   totalCompraCarro()
 
+  const finalizarPedido = () => {
+    localStorage.removeItem('baseDeDatos')
+    location.reload()
+  }
+
+  // borrar productos del carrito 
+  const quitarCarro = () => {
+
+   localStorage.removeItem('baseDeDatos')
+   location.reload()
+  }
+  

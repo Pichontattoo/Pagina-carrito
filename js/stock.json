@@ -65,5 +65,50 @@
     "image": "../assets/images/puas.jpg",
     "price": 1200,
     "description": "Puas surtidas"
+  },
+  {
+    "id": 8,
+    "family": "pedales",
+    "name": "Fuzz",
+    "category": "Fuzz overdrive distorsion",
+    "image": "../assets/images/fz-5.jpg",
+    "price": 18990,
+    "description": "Pedal de Fuzz clasico"
+  },
+  {
+    "id": 9,
+    "family": "pedales",
+    "name": "Super Chorus",
+    "category": "modulacion",
+    "image": "../assets/images/ch-1.jpg",
+    "price": 14990,
+    "description": "Pedal de Chorus tradicional"
+  },
+  {
+    "id": 10,
+    "family": "pedales",
+    "name": "Compressor Sustainer",
+    "category": "compresores",
+    "image": "../assets/images/cs-3.jpg",
+    "price": 14990,
+    "description": "Pedal compresor"
+  },
+  {
+    "id": 11,
+    "family": "pedaleras",
+    "name": "helix LT",
+    "category": "multiefectos",
+    "image": "../assets/images/helix-lt.jpg",
+    "price": 78000,
+    "description": "Pedal de overdirve sutil sarasa sarasa"
+  },
+  {
+    "id": 12,
+    "family": "pedaleras",
+    "name": "fractal ax-8",
+    "category": "multiefectos",
+    "image": "../assets/images/fractal-ax8.jpg",
+    "price": 88000,
+    "description": "Pedal de overdirve sutil sarasa sarasa"
   }
 ]

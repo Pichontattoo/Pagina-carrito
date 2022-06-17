@@ -76,6 +76,7 @@ form.addEventListener('submit', async (event) => {
     data = names
     //console.log(data) //recorre el array cuando se busca algo en el input
   }
+  
 
   const newArray = data.flatMap(item => [{ name: item.name.toLowerCase(), image: item.image, price: item.price, description: item.description, id: item.id }])
   const filterArray = newArray.filter(item => item.description.toLowerCase().includes(input))  // busca en la descripcion para renderizar el elemento
@@ -94,7 +95,7 @@ const pintarCards = data => {
     template.querySelector('h5').textContent = product.description
     template.querySelector('p').textContent = product.price
     template.querySelector('img').setAttribute("src", product.image)
-    template.querySelector('.bttn-carro').dataset.id = product.id
+    template.querySelector('.bttn-carro').dataset.id = product.id // obtener la id del producto
     const clone = template.cloneNode(true);
     fragment.appendChild(clone)
 
@@ -149,11 +150,13 @@ const addCarro = e => {
 const cargarCarro = item => {
    console.log(item)
   const carrito = {
+      id: item.querySelector('.bttn-carro').dataset.id,
       name: item.querySelector('h4').textContent,
       price: item.querySelector('p').textContent,
-      img:item.querySelector('img')
+      img:item.querySelector('img'),
 
   }
+
   carro.push(carrito)
   console.log(carro)
   countCarro()
