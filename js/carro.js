@@ -12,12 +12,12 @@ window.addEventListener('load', () => {
         imprimirCarro(carrito)
     })
 
-
+// crear la carta de cada producto en el carrito
 const imprimirCarro = data => {
     data.map(product => {
-      
+      templateCarro.querySelector('.btn-sm').dataset.id=product.id  // otorgarle el id al boton
       templateCarro.querySelector('h4').textContent = product.name
-      templateCarro.querySelector('p').textContent = product.price
+      templateCarro.querySelector('p').textContent = `$ ${product.price}`
       const clonar = templateCarro.cloneNode(true);
       fragmento.appendChild(clonar)
   
@@ -45,10 +45,13 @@ const totalCompraCarro = () => {
     location.reload()
   }
 
-  // borrar productos del carrito 
-  const quitarCarro = () => {
+  
 
-   localStorage.removeItem('baseDeDatos')
-   location.reload()
-  }
+  // borrar productos del carrito 
+  /*const quitarCarro = () => {
+   /* localStorage.removeItem('baseDeDatos')
+   location.reload()*/
+  
+
+  
   

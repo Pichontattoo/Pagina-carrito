@@ -3,8 +3,8 @@ const container = document.getElementById('container')
 const hayOfertas = document.getElementById('titulo-ofertas')
 const template = document.getElementById('template').content   // template de los productos del catalogo
 const fragment = document.createDocumentFragment()
-
-
+const userName = document.getElementById('userName')
+let newUser =sessionStorage.getItem("usuario")
 
 
 
@@ -18,6 +18,12 @@ function limpiarCatalogo() {
 // cargar las ofertas al cargar la pagina 
 
 window.onload = async function ofertas() {
+
+  if(newUser){
+  userName.innerText = `Bienvenido, ${newUser}` 
+  }
+  
+
   let data = []
   let response = await fetch(stock)
   let names = await response.json()
