@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 .navbar {
   padding: 0%;
   
@@ -37,6 +36,7 @@
 .container {
   width: 80%;
   padding: 3%;
+ 
 }
 
 .grilla {
@@ -53,11 +53,19 @@
   padding: 3%;
   border-radius: 20px;
   text-align: center;
+  
 }
 
 .card {
   background-color: #e1e3da;
   padding: 1%;
+  box-shadow: -3px 18px 19px 0px rgba(0,0,0,0.68);
+  transition: 0.8s;
+}
+
+.card:hover {
+  transform: scale(1.2);
+
 }
 
 .carritoSpan{
@@ -103,13 +111,14 @@ label {
 
 .h3-ofertas {
   margin: 1.5%;
-  color: rgb(117, 9, 9);
-  font-family: 'Bebas Neue';
-  font-size: 3rem;
+  color: rgb(214, 21, 21);
+  font-family: 'Rubik Moonrocks';
+  font-size: 3.2rem;
   letter-spacing: 0.25em;
   word-spacing: 0.25em;
   text-transform: uppercase;
   text-align: center;
+  text-shadow: 0px 9px 4px rgba(83, 83, 83, 0.6);
   animation: bounce-top 1.5s  both;
 
 }
@@ -153,14 +162,19 @@ label {
   }
 }
 
+.loginBack {
+  background-image: url("../assets/images/login-back.jpg");
+
+}
 .container-log {
-  width: 100%;
-  height: 80vh;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #c2c9cc;
+  width: 55%;
+  padding: 3%;
+  background-color: rgba(40, 109, 63, 0.6);
+  backdrop-filter: blur(5px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 50px;
+  box-shadow: -3px 18px 19px 0px rgba(0,0,0,0.68);
 }

@@ -14,9 +14,9 @@
   <link rel="stylesheet" href="../css/style.css">
     <title>Login</title>
 </head>
-<body>
+<body class="loginBack">
     <div class="container">
-        <!--<div class="container-log"> -->
+        <div class="container-log"> 
             <h3>Login</h3>
         <form id="login">
             <div class="form-group">
@@ -27,11 +27,12 @@
               <label for="pass">Password</label>
               <input type="password" class="form-control" id="pass" placeholder="Password">
             </div>
-            <div class="form-check">
+            <div class="form-group">
+              <p>No tienes cuenta?, <a href="#">Registrate</a></p>
             </div>
             <input type="submit" class="btn btn-primary" value="Entrar">
           </form>
-       <!-- </div> -->
+       </div>
     </div>
 
     <script src="../js/login.js"></script>
