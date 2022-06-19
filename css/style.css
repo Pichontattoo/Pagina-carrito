@@ -59,12 +59,13 @@
 .card {
   background-color: #e1e3da;
   padding: 1%;
-  box-shadow: -3px 18px 19px 0px rgba(0,0,0,0.68);
   transition: 0.8s;
 }
 
-.card:hover {
+.cardShop:hover {
   transform: scale(1.2);
+  box-shadow: -3px 18px 19px 0px rgba(0,0,0,0.68);
+  
 
 }
 
@@ -108,6 +109,11 @@ label {
   align-items: center;
 }
 
+.ofertas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .h3-ofertas {
   margin: 1.5%;
@@ -168,7 +174,10 @@ label {
 }
 .container-log {
   width: 55%;
-  padding: 3%;
+  padding: 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgba(40, 109, 63, 0.6);
   backdrop-filter: blur(5px);
   position: absolute;
@@ -177,4 +186,54 @@ label {
   transform: translate(-50%, -50%);
   border-radius: 50px;
   box-shadow: -3px 18px 19px 0px rgba(0,0,0,0.68);
+}
+
+.container-log form {
+  width: 100%;
+}
+
+.container-log form input {
+  margin: 1%;
+}
+
+.container-log a {
+  text-decoration: none;
+  font-family: 'bebas neue';
+  font-size: 1.2rem;
+  color: antiquewhite;
+}
+.carro {
+  width: 75%;
+  padding: 3%;
+  background-color: rgba(54, 108, 168, 0.6);
+  backdrop-filter: blur(5px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  
+}
+
+.carroShop {
+  margin: auto;
+  padding: 3%;
+  background-color: rgba(57, 65, 75, 0.6);
+  backdrop-filter: blur(5px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  
+}
+
+.p-3 {
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .cardShop:hover {
+    transform: scale(1);
+  }
 }
