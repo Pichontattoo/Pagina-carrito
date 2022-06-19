@@ -42,7 +42,7 @@ const totalCompraCarro = () => {
 
   const finalizarPedido = () => {
     localStorage.removeItem('baseDeDatos')
-    location.reload()
+    window.location.href = "../index.html"
   }
 
   
