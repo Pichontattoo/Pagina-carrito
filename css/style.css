@@ -232,8 +232,13 @@ label {
   border-radius: 30px;
 }
 
+
 @media screen and (max-width: 600px) {
   .cardShop:hover {
     transform: scale(1);
+  }
+  .filter-bar{
+    width: 50%;
+    justify-content: center;
   }
 }

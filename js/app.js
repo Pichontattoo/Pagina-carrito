@@ -99,7 +99,7 @@ const pintarCards = data => {
 
     template.querySelector('h4').textContent = product.name
     template.querySelector('h5').textContent = product.description
-    template.querySelector('p').textContent = product.price
+    template.querySelector('p').textContent = product.price 
     template.querySelector('img').setAttribute("src", product.image)
     template.querySelector('.bttn-carro').dataset.id = product.id // obtener la id del producto
     const clone = template.cloneNode(true);
