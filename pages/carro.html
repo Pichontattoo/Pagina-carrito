@@ -23,8 +23,9 @@
       <h3>Carrito</h3>
     </div>
     <div class="p-3 border bg-light"><h3>Tu Compra</h3>
-      <div id="container-carro" class="h-100">
-        
+      <div class="containerCarro">
+      <div id="container-carro" class="container-md">
+      </div>
       </div>
       
       <h3 id="totalCompra"></h3>
@@ -35,19 +36,24 @@
   </div>
 <template id="renderCarro">
   
-    <div class="card rounded-3 mb-4">
-      <div class="card-body">
-        <div class="row d-flex justify-content-between align-items-center">
-  
-          <div class="col-md-2 col-lg-2 col-xl-2">
-      <h4 class="card-title"></h4>
-      </div>
-      <div class="col-md-3 col-lg-3 col-xl-3">
-      <img class="card-img-top img-carro" src="" alt="Card image cap">
-      </div>
-      <p class="card-text"></p>
-      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-      <button class="btn btn-secondary btn-sm " onclick={quitarCarro()}>Quitar</button>
+  <div class="row border-top border-bottom">
+    <div class="row main align-items-center">
+        <div class="col-2"><img class="img-fluid" src=""></div>
+        <div class="col">
+            <div class="row text-muted"><p></p></div>
+            <div class="row"><h4></h4></div>
+        </div>
+        <div class="col">
+            
+        </div>
+        <div class="col">
+            
+        </div>
+        <div class="col"> <button class="btn btn-secondary btn-sm " onclick={quitarCarro()}>Quitar</button></div>
+       
+    </div>
+</div>
+      
       </div>
     </div>
      </div>

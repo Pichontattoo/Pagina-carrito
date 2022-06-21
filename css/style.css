@@ -59,9 +59,17 @@ option {
 }
 .container {
   width: 80%;
+  height: 90%;
+  overflow: auto;
   padding: 3%;
   flex-wrap: wrap;
   background-color: transparent;
+}
+
+.containerCarro {
+  width: 80%;
+  margin: auto;
+  overflow: auto;
 }
 
 .grilla {
@@ -255,7 +263,7 @@ label {
   
 }
 
-.img-carro {
+.img-fluid {
   width: 60%;
   border-radius: 10px;
 }
