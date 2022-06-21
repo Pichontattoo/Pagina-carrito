@@ -7,7 +7,7 @@ const fragmento = document.createDocumentFragment()
 const valorTotal = document.getElementById('totalCompra')
 
 window.addEventListener('load', () => {  
-    const carrito = data.filter(item => [{ id: item.id, name: item.name, image: item.image, price: item.price}])
+    const carrito = data.filter(item => [{ id: item.id, name: item.name, image: item.img, price: item.price}])
         console.log(carrito)
         imprimirCarro(carrito)
     })
@@ -18,6 +18,7 @@ const imprimirCarro = data => {
       templateCarro.querySelector('.btn-sm').dataset.id=product.id // otorgarle el id al boton
       templateCarro.querySelector('h4').textContent = product.name
       templateCarro.querySelector('p').textContent = `$ ${product.price}`
+      templateCarro.querySelector('img').setAttribute("src", product.img)
       const clonar = templateCarro.cloneNode(true);
       fragmento.appendChild(clonar)
   

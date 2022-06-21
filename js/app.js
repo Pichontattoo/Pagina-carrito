@@ -159,7 +159,7 @@ const cargarCarro = item => {
       id: item.querySelector('.bttn-carro').dataset.id,
       name: item.querySelector('h4').textContent,
       price: item.querySelector('p').textContent,
-      img:item.querySelector('img'),
+      img:item.querySelector('img').src,
 
   }
 
