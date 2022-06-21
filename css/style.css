@@ -285,6 +285,9 @@ label {
   border-radius: 10px;
 }
 
+.title-h3 {
+  color: antiquewhite;
+}
 
 @media screen and (max-width: 600px) {
   .cardShop:hover {
