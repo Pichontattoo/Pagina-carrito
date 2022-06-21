@@ -6,7 +6,7 @@
     "category": "overdrive",
     "image": "../assets/images/sd-1.jpg",
     "price": 14990,
-    "description": "Pedal de overdirve sutil sarasa sarasa"
+    "description": "Pedal de overdirve clasico"
   },
 
   {
@@ -16,7 +16,7 @@
     "category": "overdrive",
     "image": "../assets/images/ds-1.jpg",
     "price": 13990,
-    "description": "Pedal de overdirve, pedal de distorsion"
+    "description": "Pedal de overdrive, pedal de distorsion"
   },
 
   {
@@ -26,7 +26,7 @@
     "category": "overdrive",
     "image": "../assets/images/sd-1-black.jpg",
     "price": 14390,
-    "description": "overdirve violento"
+    "description": "Overdirve violento, R'n'R"
   },
 
   {
@@ -36,7 +36,7 @@
     "category": "overdrive",
     "image": "../assets/images/sd-1-black.jpg",
     "price": 14390,
-    "description": "overdirve violento"
+    "description": "Overdrive Extra Gain"
   },
 
   {
@@ -46,7 +46,7 @@
     "category": "multiefectos",
     "image": "../assets/images/gt-1000.jpg",
     "price": 38000,
-    "description": "Pedal de overdirve sutil sarasa sarasa"
+    "description": "Pedalera Multiefectos, Emulador de Amps"
   },
   {
     "id": 6,
@@ -100,7 +100,7 @@
     "category": "multiefectos",
     "image": "../assets/images/helix-lt.jpg",
     "price": 78000,
-    "description": "Pedal de overdirve sutil sarasa sarasa"
+    "description": "Emulador de Amps y multiefectos"
   },
   {
     "id": 12,
@@ -109,6 +109,43 @@
     "category": "multiefectos",
     "image": "../assets/images/fractal-ax8.jpg",
     "price": 88000,
-    "description": "Pedal de overdirve sutil sarasa sarasa"
+    "description": "Uno de los mejores simuladores de efectos y amps"
+  },
+  {
+    "id": 13,
+    "family": "cuerdas",
+    "name": "Encordados",
+    "category": "cuerdas",
+    "image": "../assets/images/encordado-1.jpg",
+    "price": 1800,
+    "description": "Cuerdas Guitarra Electrica"
+  },
+  {
+    "id": 14,
+    "family": "cuerdas",
+    "name": "Encordados",
+    "category": "cuerdas",
+    "image": "../assets/images/encordado-2.jpg",
+    "price": 2300,
+    "description": "Cuerdas Guitarra Electrica"
+  },
+  {
+    "id": 15,
+    "family": "cuerdas",
+    "name": "Encordados",
+    "category": "cuerdas",
+    "image": "../assets/images/encordado-3.jpg",
+    "price": 2500,
+    "description": "Cuerdas Guitarra Electrica"
+  },
+  {
+    "id": 16,
+    "family": "pedales",
+    "name": "Digital Delay",
+    "category": "delay",
+    "image": "../assets/images/dd-8.jpg",
+    "price": 14990,
+    "description": "Pedal delay"
   }
 ]
+ 
