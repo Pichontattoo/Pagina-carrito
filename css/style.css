@@ -145,8 +145,14 @@ label {
 .btn:hover {
   background-color: #ff7707;
 }
-.btn:active {
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.open .dropdown-toggle.btn {
   background-color: #ff7707;
+  color: #fff;
+  border: none;
 }
 
 .publicity {
