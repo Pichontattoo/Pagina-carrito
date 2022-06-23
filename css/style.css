@@ -5,18 +5,20 @@
 }
 
 body {
-  background-image: url('../assets/images/backcolors.png');
+  background-image: url("../assets/images/backcolors.png");
   background-size: cover;
 }
 .navbar {
   padding: 0%;
-  
-  
 }
 .navigation {
   padding: 2%;
-  background: rgb(61,169,169);
-background: linear-gradient(30deg, rgba(61,169,169,1) 0%, rgba(1,29,46,1) 91%);
+  background: rgb(61, 169, 169);
+  background: linear-gradient(
+    30deg,
+    rgba(61, 169, 169, 1) 0%,
+    rgba(1, 29, 46, 1) 91%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,21 +27,22 @@ background: linear-gradient(30deg, rgba(61,169,169,1) 0%, rgba(1,29,46,1) 91%);
 .nav-link {
   color: antiquewhite;
   position: relative;
-  font-family:  'Orbitron';
- 
+  font-family: "Orbitron";
 }
 
-.form-control::placeholder{
+.form-control::placeholder {
   color: #838386;
   opacity: 0.6;
 }
 
 select {
   background: transparent;
-     border: none;
+  border: none;
 }
 
-select:focus{ outline: none;}
+select:focus {
+  outline: none;
+}
 
 option {
   border-radius: 15px;
@@ -55,7 +58,7 @@ option {
 
 .h6 {
   color: antiquewhite;
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
 }
 .container {
   width: 80%;
@@ -93,28 +96,28 @@ option {
   padding: 3%;
   border-radius: 10px;
   text-align: center;
-  
 }
-
 
 .card {
   background-color: #e1e3da;
   transition: 0.8s;
 }
 
+.cardShop {
+  border: 2px solid #ffc107;
+}
 .cardShop:hover {
   transform: scale(1.08);
-  box-shadow: -3px 14px 19px 0px rgba(0,0,0,0.68);
-  
-
+  border: 3px solid #ff7707;
+  box-shadow: -3px 14px 19px 0px rgba(0, 0, 0, 0.68);
 }
 
-.carritoSpan{
+.carritoSpan {
   background-color: red;
   position: relative;
 }
 
-.filter-bar{
+.filter-bar {
   width: 100%;
   display: flex;
   align-items: center;
@@ -131,13 +134,19 @@ label {
   border: none;
 }
 
-.formselect:active{
+.formselect:active {
   border: none;
 }
 
 .btn {
-  background-color: rgb(60, 167, 167);
+  background-color: #ffc107;
   border: none;
+}
+.btn:hover {
+  background-color: #ff7707;
+}
+.btn:active {
+  background-color: #ff7707;
 }
 
 .publicity {
@@ -157,17 +166,16 @@ label {
 
 .h3-ofertas {
   margin: 1.5%;
-  color: rgb(214, 21, 21);
-  font-family: 'Orbitron';
+  color: #ffc107;
+  font-family: "Orbitron";
   font-size: 2.8rem;
   font-weight: 700;
   letter-spacing: 0.25em;
   word-spacing: 0.25em;
   text-transform: uppercase;
   text-align: center;
-  text-shadow: 0px 9px 4px rgba(83, 83, 83, 0.6);
-  animation: bounce-top 1.5s  both;
-
+  text-shadow: 0px 2px 4px rgba(83, 83, 83, 0.6);
+  animation: bounce-top 1.5s both;
 }
 
 @keyframes bounce-top {
@@ -218,7 +226,6 @@ label {
 }
 .loginBack {
   background-image: url("../assets/images/login-back.jpg");
-
 }
 .container-log {
   width: 55%;
@@ -226,14 +233,18 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(30deg, rgba(61,169,169,1) 0%, rgba(1,29,46,1) 91%);
+  background: linear-gradient(
+    30deg,
+    rgba(61, 169, 169, 1) 0%,
+    rgba(1, 29, 46, 1) 91%
+  );
   backdrop-filter: blur(5px);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50px;
-  box-shadow: -3px 18px 19px 0px rgba(0,0,0,0.68);
+  box-shadow: -3px 18px 19px 0px rgba(0, 0, 0, 0.68);
 }
 
 .container-log form {
@@ -246,7 +257,7 @@ label {
 
 .container-log a {
   text-decoration: none;
-  font-family: 'bebas neue';
+  font-family: "bebas neue";
   font-size: 1.2rem;
   color: antiquewhite;
 }
@@ -260,7 +271,6 @@ label {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 150px;
-  
 }
 
 .img-fluid {
@@ -271,14 +281,18 @@ label {
 .carroShop {
   margin: auto;
   padding: 3%;
-  background: linear-gradient(30deg, rgba(61,169,169,1) 0%, rgba(1,29,46,1) 91%);
+  background: linear-gradient(
+    30deg,
+    rgba(61, 169, 169, 1) 0%,
+    rgba(1, 29, 46, 1) 91%
+  );
   backdrop-filter: blur(5px);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 20px;
-  box-shadow: -3px 18px 19px 0px rgba(0,0,0,0.68);
+  box-shadow: -3px 18px 19px 0px rgba(0, 0, 0, 0.68);
 }
 
 .p-3 {
@@ -293,17 +307,16 @@ label {
   .cardShop:hover {
     transform: scale(1);
   }
-  .filter-bar{
+  .filter-bar {
     width: 50%;
     justify-content: center;
   }
   .img-carro {
     width: 30%;
   }
-  
+
   .card-body {
     padding: 5%;
-    
   }
   .h3-ofertas {
     font-size: 1.5rem;

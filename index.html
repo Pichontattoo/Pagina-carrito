@@ -5,21 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sarpanch:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> 
-<link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sarpanch:wght@400;500;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
   <title>E-commerce Music Shop</title>
 </head>
 
@@ -34,7 +36,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            
+
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="./index.html">Home</a>
             </li>
@@ -42,28 +44,31 @@
               <a class="nav-link" href="./pages/login.html">Login</a>
             </li>
             <li class="nav-item">
-              
+
               <a id="carro-cantidad" class="nav-link" href="./pages/carro.html"><span class="material-symbols-outlined">
-                shopping_cart
-                </span><div id="totalItems"></div></a>
+                  shopping_cart
+                </span>
+                <div id="totalItems"></div>
+              </a>
             </li>
             <li class="nav-item"><a class="nav-link" aria-current="page" href="#" id="userName"></a></li>
-          
-            
+
+
           </ul>
           <form id="form" class="d-flex" role="search">
-            <input id="search" class="form-control me-2" type="search" placeholder="Buscar Productos" aria-label="Search">
-            <button class="btn btn-primary btn-clr" type="submit">Search</button>
+            <input id="search" class="form-control me-2" type="search" placeholder="Buscar Productos"
+              aria-label="Search">
+            <button class="btn btn-primary" type="submit">Search</button>
           </form>
-          
+
         </div>
       </div>
     </nav>
   </header>
-  
+
 
   <div class="container">
-    
+
     <div class="filter-bar">
       <label for="select">Filtrar por: </label>
       <select id="select" class="formselect" onchange={filtro()}>
@@ -74,26 +79,26 @@
         <option value="accesorios">Accesorios</option>
       </select>
     </div>
-    
+
     <div class="row gx-5">
 
       <div id="titulo-ofertas" class="ofertas"></div>
       <div class="col-md-12">
         <div id="container" class="grilla container-md"></div>
       </div>
-  
+
     </div>
-    
-   
+
+
   </div>
 
 
   <template id="template">
     <div class="cards row">
       <div class="p-3 card cardShop" style="width: 14rem;">
-        
+
         <div id="data-chart" class="card-body">
-          <img src="" class ="card-img-top">
+          <img src="" class="card-img-top">
           <h4 class="card-title"></h4>
           <h5 class="card-title"></h5>
           <h6 class="simbol">$</h6>
