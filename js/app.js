@@ -18,10 +18,13 @@ function limpiarCatalogo() {
 // cargar las ofertas al cargar la pagina 
 
 window.onload = async function ofertas() {
-
+  const loginUser = document.getElementById('login')
   if (newUser) {
-    userName.innerText = `Bienvenido, ${newUser}`
+    userName.innerText = `Bienvenido, ${newUser}`;
+    loginUser.style.display = "none";
+
   }
+
 
 
   let data = []
