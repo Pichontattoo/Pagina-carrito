@@ -100,7 +100,7 @@
     "category": "multiefectos",
     "image": "../assets/images/helix-lt.jpg",
     "price": 78000,
-    "description": "Emulador de Amps y multiefectos"
+    "description": "Pedalera Multiefectos, Emulador de Amps"
   },
   {
     "id": 12,
@@ -109,7 +109,7 @@
     "category": "multiefectos",
     "image": "../assets/images/fractal-ax8.jpg",
     "price": 88000,
-    "description": "Uno de los mejores simuladores de efectos y amps"
+    "description": "Pedalera Multiefectos, Emulador de Amps"
   },
   {
     "id": 13,
@@ -148,4 +148,3 @@
     "description": "Pedal delay"
   }
 ]
- 
